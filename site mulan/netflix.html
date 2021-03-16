@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="netflix.css">
+	<title>Netflix Mulan</title>
+</head>
+<body>
+	<header>
+		<a href="#" class="logo"><img src="logo.png"></a>
+		<ul class="navegacao">
+			<li><a href="#">Inicio</a></li>
+			<li><a href="#">Canal</a></li>
+			<li><a href="#">Filmes</a></li>
+			<li><a href="#">Contas</a></li>
+			<li><a href="#">MinhaLista</a></li>
+		</ul>
+			<div class="search">
+				<input type="text" placeholder="procurar..."><i class="fa fa-search" aria-hidden="true"></i>	
+			</div>
+	</header>
+		<div class="fundo">
+		<img src="bg.jpg" class="bg">
+		<div class="content">
+		<img src="name.png" class="movietitle">
+	<h4>
+		<span>2020</span>
+		<span><i>12+</i></span>
+		<span>1h 55min</span>
+		<span>Adicionar</span>
+	</h4>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960</p>
+
+	<div class="botao">
+		<a href="#"><i class="fa fa-play" aria-hidden="true"></i>Iniciar</a>
+		<a href="#"><i class="fa fa-plus" aria-hidden="true"></i>Minha Lista</a>
+	</div>
+	</div>
+
+		<a class="play" onclick="toggleVideo();"><img src="play.png">Assistir Trailer</a>
+		</div>
+
+	<div class="trailer">
+		<video src="trailer.mp4" controls="true" autoplay="true"></video>
+		<img src="close.png" class="close" onclick="toggleVideo();">
+	</div>
+
+<script>
+	function toggleVideo(){
+		const trailer = document.querySelector('.trailer');
+		const video = document.querySelector('video');
+		trailer.classList.toggle('active');
+		video.currentTime = 0;
+		video.pause();
+	}
+</script>
+</body>
+</html>
