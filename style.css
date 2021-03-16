@@ -1,0 +1,56 @@
+body{
+   background-color:#e4e3ee;
+   
+}
+
+.formulario{
+    background-color: #FFF;
+    padding: 30px;
+    border-radius: 0.5rem;
+    box-shadow: 3px  5px 8px #cfcccc;
+    
+}
+input.form-control{
+    font-family: 'Oxanium', sans-serif;
+    font-size: 15px;
+}
+
+.lateral{
+  
+   width: 50px;
+    background-color:#26f159;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    margin-right: -10px;
+   z-index: 3;
+}
+.lateral:hover{
+    background-color: #3d5fcc;
+}
+.btn{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgb(8, 243, 8);
+    color:#fff;
+    align-items: center;
+    width: 100px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    letter-spacing: 2px;
+   cursor: pointer;
+   
+   
+}
+.btn:hover{
+    
+    background-color: #3d5fcc;
+    color:#000;
+    letter-spacing: 6px;
+    transition: 0.5s;
+}
+
+
+
+   
+
